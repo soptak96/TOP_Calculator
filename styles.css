@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+    font-family: Helvetica, Arial, sans-serif;
+    background-color: #eaece5;
+
+}
+
+.calculator {
+    width: 30vw;
+    height: 70vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    border: 1px solid black;   
+}
+
+button {
+    width: calc(100% / 4);
+    height: calc(48.7vh / 5);
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0;
+    background-color: rgb(228, 228, 228);
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(192, 191, 191);
+}
+
+button:active {
+    background-color: rgb(172, 172, 172);
+}
+
+.button {
+    display: flex;
+    flex-wrap: wrap;    
+}
+
+#display {
+    width: 100%;
+    height: 30%;
+    border: 3px solid black;
+    font-size: 45px;
+    font-weight: bold;
+    background-color: rgb(190, 204, 195);      
+}
+
+#clear, #delete {
+    flex: 50%;
+}
+
+#clear {
+    background-color: #f71313;
+    color: aliceblue;
+}
+
+#delete {
+    background-color: aquamarine;
+}
+
+#clear:hover {
+    background-color: #d80000;
+}
+
+#delete:hover {
+    background-color: rgb(108, 219, 182);
+}
+
+#parent {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 95vh;
+}
+
+#equal {
+    background-color: #0062ff;
+    color: #ffffff;
+}
+
+#equal:hover {
+    background-color: #0150cf;
+}
+
+#add, #minus, #multiply, #divide {
+    background-color: rgb(255, 230, 198);
+}
+
+#add:hover, #minus:hover, #multiply:hover, #divide:hover {
+    background-color: rgb(230, 201, 164);   
+}
