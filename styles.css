@@ -90,3 +90,10 @@ button:active {
 #add:hover, #minus:hover, #multiply:hover, #divide:hover {
     background-color: rgb(230, 201, 164);   
 }
+#typing-display {
+    color: #eaece5;
+    width: 100%;
+    height: 100px;
+    position: relative;
+    top: 15%;
+}

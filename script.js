@@ -14,9 +14,11 @@ function divide(a,b) {
     return a/b;
 }
 
-let firstInput = 10;
-let operator = "/" ;
-let secondInput = 2;
+let firstInput = "" ;
+let operator;
+let secondInput = "";
+
+
 
 function operate() {
     if(operator === "+"){
@@ -32,3 +34,23 @@ function operate() {
         return divide(firstInput,secondInput)
     }
 }
+
+const numberKeys = document.querySelectorAll("[data-number]")
+const Display = document.querySelector("#typing-display");
+
+function displayNumber() {
+    firstInput += this.value;
+    Display.textContent = firstInput;
+}
+numberKeys.forEach(button => {
+    button.addEventListener("click", (e) => {
+        firstInput += e.target.innerText;
+        console.log(firstInput);
+        if(Number(firstInput)){
+            Display.textContent = firstInput;
+        }
+    });
+    
+
+})
+
