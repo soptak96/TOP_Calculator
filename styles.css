@@ -43,7 +43,8 @@ button:active {
     border: 3px solid black;
     font-size: 45px;
     font-weight: bold;
-    background-color: rgb(190, 204, 195);      
+    background-color: rgb(190, 204, 195);  
+    text-align: right;    
 }
 
 #clear, #delete {
@@ -105,5 +106,7 @@ button:active {
     margin: 0;
     background-color: rgb(190, 204, 195);
     font-size: 18px;
+    
+    
 }
 
