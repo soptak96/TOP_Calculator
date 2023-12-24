@@ -91,9 +91,19 @@ button:active {
     background-color: rgb(230, 201, 164);   
 }
 #typing-display {
-    color: #eaece5;
+    color: black;
     width: 100%;
     height: 100px;
-    position: relative;
-    top: 15%;
+    /* position: relative; */
+    /* top: 15%; */
+    margin-top: 50px;
+    background-color: rgb(190, 204, 195);
 }
+
+#resulting-display {
+    height: 25px;
+    margin: 0;
+    background-color: rgb(190, 204, 195);
+    font-size: 18px;
+}
+
